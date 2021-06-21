@@ -23,7 +23,7 @@ def cuda_is_available():
     return False
 
 
-REQUIRED_PACKAGES = ['torch>=1.3', 'numpy', 'scipy', 'cupy>=7.0.0']
+REQUIRED_PACKAGES = ['torch>=1.9', 'numpy', 'scipy', 'cupy>=7.0.0']
 if not cuda_is_available():
     REQUIRED_PACKAGES.remove('cupy>=7.0.0')
 
